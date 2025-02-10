@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d32323;
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #eee;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search-bar input {
+    border: none;
+    padding: 8px;
+    margin: 0 5px;
+    width: 180px;
+    outline: none;
+}
+
+.search-bar button {
+    background: #d32323;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+    background: none;
+}
+
+.login {
+    background: none;
+    border: 1px solid #333;
+}
+
+.signup {
+    background: #c0651b;
+    color: white;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 150px;
+}
+.dropdown li {
+    padding: 8px;
+    cursor: pointer;
+}
+.dropdown li:hover {
+    background-color: #f4f4f4;
+}
+.btn:hover .dropdown {
+    display: block;
+}
+#res:hover .dropdown{
+    display:block;
+}
+
+.cards .card{
+    border: 2px solid rgb(245, 244, 244);
+    padding: 10px;
+    height: 200px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgb(114, 112, 112);
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    gap: 50px;
+    cursor: pointer;
+    justify-content: center;
+}
+.cards .card:hover{
+    background-color: #c4bfbf;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.btn:hover{
+    background-color: rgb(208, 89, 89);
+}
